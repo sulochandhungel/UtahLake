@@ -1,6 +1,3 @@
-# I deleted Updated and added somethign new on line xxx
-
-
 #install.packages("fitdistrplus")
 library(fitdistrplus)
 
@@ -14,8 +11,6 @@ daily_dts_str = paste(daily_csv$Year,daily_csv$Month, daily_csv$Day,sep = "-")
 daily_dts = strptime(daily_dts_str, format = "%Y-%m-%d")
 
 comp_elev = 4489.045
-
-## Added something silly
 
 plot(daily_dts, daily_csv$Elev,
 	'b', cex = 0.4,
